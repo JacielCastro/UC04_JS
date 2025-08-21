@@ -1,0 +1,16 @@
+{
+  "name": "javascrip",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "teste.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node teste"
+  },
+  "author": "Jaciel Castro",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
