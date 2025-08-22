@@ -16,6 +16,3 @@ if (velocidade === soma ) {
 } else {
     console.log("\n-- Velocidade dentro do limite permitdo. --\n")    
 }
-
-
-//console.log (`\nA velocidade do radar é --> ${radar}\nvelocidade do carro --> ${velocidade} valor da posenta acima ${posentagem}`)
