@@ -1,4 +1,4 @@
-// UM CONVERSOU DE MOEDAS.
+// UM CONVERSÃO DE MOEDAS.
 import PromptSync from "prompt-sync";
 const prompt = PromptSync()
 let dolar = 5.424, euro = 6.353, peso = 0.0042, libra = 7.326, franco = 6.753 
