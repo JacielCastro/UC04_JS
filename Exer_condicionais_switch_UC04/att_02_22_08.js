@@ -1,57 +1,53 @@
+// CRIANDO UM CALCULADORA QUE PERMITE AO USUÁRIO REALIZAR OPERAÇÃES BÁSICAS E AVANÇADAS
 import PromptSync from "prompt-sync"; 
 const prompt = PromptSync()
 console.log("\n---------- Tipo da operação Básico ----------")
-console.log("[1] Soma\n[2] Subtração\n[3] Multiplicação\n[4] Divisão")
+console.log("- Soma\n- Subtração\n- Multiplicação\n- Divisão")
 console.log("\n----------Tipo da operação Avançada ----------")
-console.log("[1] Raiz quadrado\n[2] Potenciação\n")
-let valor01,valor02,tipo = prompt("--> Qual o tipo da operação: Básica ou Avançado: "+"\n").toUpperCase()
+console.log("- Raiz quadrado\n- Potenciação\n")
+let sub,soma,mult,divi,valor01,valor02,tipo = prompt("--> Qual o tipo da operação: Básica ou Avançado: ").toUpperCase()
 if (tipo === "BASICA") {   
     let operado = prompt("Informe qual é operação: ")
     operado = operado.toLowerCase()
     valor01 = Number(prompt("Informe o primeiro valor: "))
-    valor0202 = Number(prompt("Informa o segundo valor: ")) 
+    valor02 = Number(prompt("Informa o segundo valor: ")) 
 switch (operado) {
     case "soma":
-        let soma = soma01 + soma02
+        soma = valor01 + valor02
         console.log("O resultado da sua soma: ",soma,"\n") 
     break;
     case "subtracao":
-        let sub, sub01,sub02
-        sub01 = Number(prompt("Informe o primeiro valor: "))
-        sub02 = Number(prompt("Informe o segundo valor: "))
-        sub = sub01 - sub02
+        sub = valor01 - valor02
         console.log("O resultado da sua subtração: ",sub,"\n")
+    break;
     case "multiplicação":
-        let mult, mult01,mult02
-        mult01 = Number(prompt("Informe o primeiro valor: "))
-        mult02 =Number(prompt("Informe o segundo valor: "))
-        mult = mult01 * mult02
-        console.log("O resultado da sua subtração: ",mult,"\n")
+        mult = valor01 * valor02
+        console.log("O resultado da sua multiplicação: ",mult,"\n")
     break;
     case "divisao":
-        let divi,divi01,divi02
-        divi01 = Number(prompt("Informe o primeiro valor: "))
-        divi02 = Number(prompt("Informe o segundo valor: "))
-        divi = divi01 * divi02
+        divi = valor01 / valor02
         console.log("O resultado da sua subtração: ",divi,"\n")
     break;
     default:
+        console.log("Não encontramos esse operador...\n")
         break;
 }
-}else{
-    console.log("Não encontramos esse tipo de operação...")
 }
 if (tipo === "AVANCADA") {
-    let operado = prompt("Informe qual é operação: ")
-    operado = operado.toLowerCase()
-    switch (operaçao) {
+    let raiz,expoente,base,operado = prompt("Informe qual é operação, raiz ou potencia:  ").toLowerCase()
+    switch (operado) {
         case "raiz":
-            
+            raiz = Math.sqrt(Number(prompt("Informe um número: "))).toFixed(2)
+            console.log("A raiz quadrada --> ",raiz) 
         break;
         case "potencia":
-
+            base = Number(prompt("Informe o valor da base: "))
+            expoente = Number(prompt("informe o valor do expoente: "))
+            console.log("O resultado potencia -->",Math.pow(base,expoente))
         break;
         default:
+            console.log("Não encontramos esse tipo de operador...\n")
             break;
-    }   
-} 
+    }
+}else
+    console.log("Não encontramos esse tipo de operação...\n")
