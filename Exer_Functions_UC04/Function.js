@@ -21,3 +21,15 @@ export function Exercicios(){ // exportando a função
     console.log(`As calorias gastas neste tempo foi --> ${calorias_Gastas} calorias\n`)
 }
 
+//===========================================================================================
+
+export function Deposito(saldo_atual,valor_deposito) {
+    saldo_atual = saldo_atual + valor_deposito
+    return saldo_atual
+}
+export function Saque_Conta(saldo_atual,valor_saque) {
+    saldo_atual = saldo_atual - valor_saque
+    return saldo_atual
+}
+
+
