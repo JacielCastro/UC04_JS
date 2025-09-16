@@ -1,10 +1,9 @@
+
+// EXERCÍCIO 02 --> SIMUlAÇÃO DE DEPOSITO E SAQUE
+
 import PromptSync from "prompt-sync";
 const prompt = PromptSync()
-
-import { Exercicios,Deposito,Saque_Conta } from "./Function.js";
-//Exercicios()
-
-// EXERCÍCIO 02 --> SIMUlAÇÃO DE DEPOSITO E SAQUE 
+import {Deposito,Saque_Conta } from "./Function.js";
 
 let operacao,saldo_atual = 0,valor_saque = 0  
 do {
@@ -24,5 +23,3 @@ do {
     }
 } while (operacao !== "sair");
     console.log("Operação finalizada !!!");
-
-    // EXERCÍCIO 03 --> 

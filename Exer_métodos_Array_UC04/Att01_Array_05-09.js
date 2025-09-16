@@ -8,7 +8,7 @@ console.log(artigo)
 for(let i = 0; i < artigo.length; i++)// Criando um laço de reptição 
     if (ofensiva.includes(artigo[i])) {
         artigo[i] = " *** "// trocando o indice que está dentro da array por ( *** )
-        contador++//Contador para verifica a quantidades de palavras ofendivas 
+        contador++//Contador para verifica a quantidades de palavras ofensivas 
     }
 console.log(`\nA quantidades de palavras ofensivas que foram trocadas => ${contador}
 Artigo com as palavras ofensivas trocadas por ( *** )\n\n${artigo.join(" ")}\n`)

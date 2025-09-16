@@ -12,9 +12,9 @@ let busca_produto = prompt("Informe o produto que queira encontra ? ")// solicit
 for (let index = 0; index < novo_catalogo.length; index++){// Realizando a busca dentro da Array do valor solicitado
     if (novo_catalogo[index] === busca_produto){ 
         console.log(`\nTemos o Produto Solicitado em nosso catálogo --> ${novo_catalogo[index]}\nPosição do produto no catálogo --> ${index}\n`)// emprimindo o item e o índice
-        controle = true // uma variavelde controle
+        controle = true // uma variavel de controle
     }
 }
-if(!controle){ // Se variável não foi alterada para verdadeirodurante o loop, o if entra e mostra a mensagem apenas uma vez
+if(!controle){ // Se variável não foi alterada para verdadeiro durante o loop, o if entra e mostra a mensagem apenas uma vez
     console.log("\n",busca_produto,"não existe em nosso catálogo...\n")
     }
